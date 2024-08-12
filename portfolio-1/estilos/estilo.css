@@ -1,0 +1,98 @@
+/* Formatação geral da página */
+*{
+    margin: 0;
+    padding: none;
+}
+header{
+    background-color: aqua;
+    text-align: center;
+}
+header > h1 {
+    background-color:darkslategray;
+    color: white;
+    text-align: center;
+    padding:  40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+/* Formata a barra de navegação da página */
+.navbar{
+    margin: 30px auto;
+    width: 400px;
+}
+.navbar > ul{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navbar > ul > li > a{
+    padding: 0 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: darkslategray;
+}
+.navbar > ul > li:hover > a{
+    background-color: darkgray;
+    color: white;
+}
+.img_leonardo{
+    width: 20%;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+/* Separa página em paineis à esquerda e direita */
+.esquerda{
+    float: left;
+    width: 18%;
+    height: 500px;
+    text-align: center;
+}
+.esquerda > p{
+    margin: 80px 10px 10px 0;
+    text-align: left;
+    padding: 20px;
+}
+.direita{
+    width: 70%;
+    float:right;
+    text-align: justify;
+    padding: 20px;
+    margin: 80px auto;
+    margin-right: 5%;
+}
+#obras{
+    clear: both;
+}
+/* Formata tabela de painel de Obras */
+table{
+    margin: 20px auto;
+    width: 100%;
+}
+table >caption{
+    padding: 10px;
+}
+th{
+    padding: 8px;
+    background-color: cadetblue;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+td > img{
+    width: 20%;
+}
+/* Formata rodapé */
+footer{
+    background-color:darkslategray;
+    color: white;
+    text-align: center;
+    padding:  40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

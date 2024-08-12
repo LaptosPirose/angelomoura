@@ -1,0 +1,124 @@
+/* Formatação da fonte do documento geral */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Formatação de borda e margem geral*/
+body{
+    margin: 0;
+    padding:0;
+}
+main, footer{
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Fixa o posicionamento do cabeçalho e menu no topo */
+header{
+    background-color: lightblue;
+    position:fixed; 
+    top:0;
+    width: 100%;
+}
+/*Formata o h1 incluindo-o na primeira coluna*/
+h1{
+    padding: 2px 50px;
+    grid-column: 1;
+    grid-column: span 2;
+    margin: 0;
+    color: rgb(56, 94, 165);
+}   
+footer{
+    background-color: lightblue;
+    position:fixed; 
+    bottom:0;
+    width: 100%;
+}
+/*Separa o header em grids para posicionar o título e o menu*/
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-content: center;
+    height: 50px;
+}
+/*Posiciona o menu na 4a coluna*/
+.navbar{
+    grid-column: 4;
+}
+/*Posiciona os itens do menu lado a lado*/
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.navbar-nav > li >a{
+    text-decoration: none;
+    padding: 17px 30px;
+    color: rgb(56, 94, 165);
+}
+.navbar-nav > li > a:hover{
+    background-color: white;
+    color: rgb(25, 62, 129);
+}
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 0 40px 0;
+    height: 1000px;
+    text-align: justify;
+}
+/* Cria pano de fundo do painel de apresentação de livros */
+#sobre-mim{
+    background-image: url(../imagens/cemiterio.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 500px;
+    background-size: cover;
+}
+/* Formata imagens e paineis da página */
+.img-home{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0;
+}
+.img-books{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+    text-align: center;
+    margin: 20px 0;
+}
+.img-formacao{
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    }
+.lista-livros{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.lista-livros > li{
+    margin: 10px;
+}
+.img-contato{
+    max-width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+.img-site{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
